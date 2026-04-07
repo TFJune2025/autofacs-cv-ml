@@ -1,43 +1,55 @@
-# Docs Images
+# Documentation Images
 
-This folder is for images referenced directly inside the documentation pages.
+This directory contains images referenced directly within the project’s documentation.
 
-Based on the current manifest, the strongest candidate visuals are the ones that communicate system maturity **without** exposing raw data or private operational detail.
+The visuals included here are selected to communicate system behavior, model performance, and overall pipeline maturity while remaining consistent with the repository’s public, portfolio-safe scope.
 
-## Recommended image shortlist
+## Included Visuals
 
-### Highest-priority figures
+### Core Figures
 
-1. **confusion_matrix_Stage1_V40.png**
-   - useful for showing that Stage 1 is a real classifier, not a hand-wavy prefilter
+The primary visuals in this folder focus on illustrating the staged architecture and evaluation characteristics of the AutoFACS pipeline:
 
-2. **confusion_matrix_Stage2_V40.png**
-   - useful for showing the uncalibrated downstream classification surface
+* **Stage 1 confusion matrix (V40)**
+  Demonstrates that the relevance filtering stage operates as a learned classifier rather than a heuristic prefilter.
 
-3. **confusion_matrix_Stage2_Calibrated_V40.png**
-   - strongest candidate for the docs because it reflects the calibrated V40 story described in this repo
+* **Stage 2 confusion matrix (V40, uncalibrated)**
+  Represents the raw downstream classification surface prior to calibration.
 
-4. **summary_emotion_pie_chart.png**
-   - potentially useful for a lightweight demo or inference-output example if it does not reveal private source material
+* **Stage 2 confusion matrix (V40, calibrated)**
+  Reflects the calibrated output space and aligns with the evaluation narrative presented in `docs/EVALUATION_AND_RESULTS.md`.
 
-5. **emotion_timeline.png**
-   - a strong candidate for future demo documentation because it aligns with the project's time-localized inference story
+### Supporting Visuals
 
-## Optional figures after filing
+* **Emotion distribution summary (pie chart)**
+  Provides a lightweight view of model outputs suitable for demonstration contexts.
 
-If you later want a more historical appendix, the manifest also suggests earlier lineage visuals such as:
+* **Temporal emotion timeline**
+  Illustrates how the system can represent expression signals over time, supporting the project’s inference and analysis use cases.
 
-- reliability diagrams across earlier V-series generations
-- distribution plots across earlier V-series generations
-- pre-V40 confusion matrices showing project evolution
+## Scope and Intent
 
-Those are better suited for a post-filing appendix than the first public release.
+All visuals in this directory are curated to support understanding of:
 
-## What not to place here
+* the staged model architecture
+* the role of calibration in improving output quality
+* the transition from raw classification to structured inference
 
-Do not include:
+These figures are intended to complement the documentation rather than reproduce full experimental artifacts.
 
-- raw face examples
-- curated training images
-- internal review spreadsheets exported as screenshots
-- anything that makes the private working environment reconstructable
+## Current Status
+
+This image set is still under active development. While the documentation references the intended figures, not all visuals have been finalized or included yet. The current repository focuses on establishing structure, narrative clarity, and evaluation framing, with remaining assets to be added as they are curated and validated for public release.
+
+## Boundaries
+
+To maintain a clean separation between public materials and internal development assets, this folder intentionally excludes:
+
+* raw or identifiable facial imagery
+* curated training or evaluation datasets
+* internal review artifacts or annotation tooling outputs
+* any materials that would enable reconstruction of the private development environment
+
+## Future Additions
+
+Additional historical or comparative visuals (e.g., earlier model iterations or development lineage) may be incorporated in later documentation updates where appropriate.
