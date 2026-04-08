@@ -2,7 +2,8 @@
 
 Start with the root README for the top-level summary, then use these pages for the deeper technical story.
 
-![AutoFACS pipeline overview](../assets/autofacs_pipeline_overview.png)
+## Project Identity Snapshot
+![AutoFACS CV/ML social preview](../assets/repo_social_preview.png)
 
 1. [Project overview](PROJECT_OVERVIEW.md) — what the project is, what problem it addresses, and how it evolved
 2. [Architecture](ARCHITECTURE.md) — the staged CV/ML design and how the main components fit together
@@ -22,4 +23,3 @@ Start with the root README for the top-level summary, then use these pages for t
 5. `EVALUATION_AND_RESULTS.md`
 6. `LIMITATIONS_AND_LESSONS.md`
 7. `ROADMAP.md`
-4

@@ -41,6 +41,8 @@ The first stage is a relevance filter, but in this project that role is broader 
 
 In practice, that **irrelevant** side includes facial material that falls outside the clean 11-label state space addressed by Stage 2. It is intentionally broad rather than exhaustive: it captures many out-of-scope, weakly curated, ambiguous, or otherwise non-target cases without claiming to be a complete map of all real-world expression possibilities.
 
+![Stage 1 confusion matrix (V40)](img/confusion_matrix_stage1_v40.png)
+
 Role of Stage 1 in this architecture:
 
 - preserve inputs that belong to the project’s curated downstream state space

@@ -46,6 +46,8 @@ The strongest quantitative story in this repository comes from the **V40** basel
 
 ### Stage 1 relevance filtering
 
+![Stage 1 confusion matrix (V40)](docs/img/confusion_matrix_stage1_v40.png)
+
 In this project, **relevant** means a sample falls inside the curated downstream state space that Stage 2 is designed to classify. **Irrelevant** is a deliberate catch-all class for everything outside that clean 11-label scope, including ambiguous, uncategorized, weakly curated, or otherwise out-of-scope facial material. Stage 1 therefore serves as more than a simple quality gate: it defines the operational boundary between the project’s curated target taxonomy and the much larger real-world expression space.
 
 - Best reported Stage 1 row: **epoch 2**
@@ -54,6 +56,8 @@ In this project, **relevant** means a sample falls inside the curated downstream
 - `irrelevant` F1: **0.995**
 
 ### Stage 2 calibrated expression/state classification
+
+![V40 calibrated confusion matrix](docs/img/confusion_matrix_stage2_calibrated_v40.png)
 
 - Reported calibrated snapshot: **epoch 5.985**
 - Macro F1: **0.902**
@@ -68,7 +72,8 @@ In this project, **relevant** means a sample falls inside the curated downstream
   - `sadness`: **0.853**
   - `speech_action`: **0.882**
 
-![V40 benchmark snapshot](assets/v40_results_overview.png)
+### Selective V40 Benchmark Snapshot
+![AutoFACS V40 Benchmark Aggregate Performance Surface](assets/v40_results_overview.png)
 
 ## Why the project uses a staged design
 
@@ -80,7 +85,8 @@ The project record supports a **hierarchical two-stage pipeline**:
 
 A practical lesson from the project was that meaningful facial-state classification in real footage could not be treated as a single flat labeling problem. Speech-active frames, neutral baselines, weak or unusable inputs, and hard confusions all had to be handled deliberately for the system to become useful.
 
-![AutoFACS staged pipeline overview](assets/autofacs_pipeline_overview.png)
+### System Architecture Snapshot
+![AutoFACS Conceptual Pipeline Hierarchy Overview](assets/autofacs_pipeline_overview.png)
 
 ## Planned public demo
 
