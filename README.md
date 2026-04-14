@@ -8,6 +8,16 @@ This repository is a **selective public technical snapshot**. It explains what t
 
 ![AutoFACS CV/ML social preview](assets/repo_social_preview.png)
 
+## Live demo
+
+A public demo is available through [**Hugging Face Spaces**](https://huggingface.co/spaces/TFJune2025/autofacs-cv-ml):
+
+- single-image inference
+- batch image inference
+- constrained short-video clip analysis
+
+This demo provides live image and short-video inference for the public-facing AutoFACS CV/ML pipeline and showcases the V40 baseline.
+
 ## Project positioning
 
 AutoFACS CV/ML began as an effort to automate FACS-oriented facial-expression labeling for time-localized inference on recorded video. Over time, the project evolved from early benchmarking against open-source code and datasets into a more independent system built around:
@@ -87,15 +97,6 @@ A practical lesson from the project was that meaningful facial-state classificat
 
 ### System Architecture Snapshot
 ![AutoFACS Conceptual Pipeline Hierarchy Overview](assets/autofacs_pipeline_overview.png)
-
-## Planned public demo
-
-A public demo is planned through **Hugging Face Spaces**:
-
-- **Phase 1:** single-image inference
-- **Phase 2:** constrained short-video clip analysis with timestamped outputs
-
-That demo will be positioned as a public showcase layer for the V40 baseline rather than as a full release of the private working environment.
 
 ## Current status
 

@@ -36,3 +36,10 @@ This repository is documentation-first. It is meant to communicate:
 - how the public-facing repo differs from the full private working environment
 
 It is not intended to provide enough information to reconstruct the entire private system from scratch.
+
+## Public demo
+
+A public Hugging Face demo is available here:
+https://huggingface.co/spaces/TFJune2025/autofacs-cv-ml
+
+The Space is a public-facing inference layer for live image and short-video use. It is intended as a controlled demo environment and does not expose the full private development history or internal serving artifacts.
